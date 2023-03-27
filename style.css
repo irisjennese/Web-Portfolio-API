@@ -1,0 +1,137 @@
+.hidden{
+    display: none;
+}
+
+body{
+    background-color: #131112;
+    color:#ece5f0;
+    margin: 0;
+
+
+}
+.navigation {
+    height: 10vh;
+}
+
+.navigation li a,h5 {
+   color:#ece5f0;
+   font-size: 1.6rem;
+}
+
+
+.banner-container {
+    display: flex;
+    justify-content: center;
+
+}
+.banner {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100vh;
+    background-position: center;
+    animation-name: banner;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes banner{
+    0% {background-image: url(./images/logo1.png);}
+    50% {background-image: url(./images/logo3.png);}
+    100%  {background-image: url(./images/logo2.png);}
+ 
+}
+.name{
+    animation-name: nameanimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+a:hover{
+    text-shadow:0 0 20px  #42e7ff
+}
+
+@keyframes nameanimation{
+0% {text-shadow: none;}
+50%  {text-shadow:0 0 10px  #42e7ff;}
+100%  {text-shadow:0 0 20px  #42e7ff;}
+}
+.hero-section {
+    height: 40vh;
+}
+
+.heading-text{
+    height: 5vh;
+    color: #42e7ff;
+}
+.about-me-container {
+    width: 90vw;
+    
+}
+
+.about-me-skills-text {
+    margin-left:7%;
+}
+
+.about-me-skills{
+    margin-top: 20px;
+    width: 80%;
+    border-left: 10px double gray;
+    margin-left: 10%;
+    padding-left: 5%;
+}
+.details {
+    margin: 5% 0 auto;
+}
+.skills-container{
+    height: 70vh;
+    width: 90vw;
+}
+
+.skills-title{
+    margin: auto ;
+    text-transform: uppercase;
+    
+}
+
+.skills li {
+    display: inline;
+    list-style: none;
+}
+.banner-text, .icons {
+    color: #ece5f0;
+}
+
+.works-img{
+    width: 25%;
+    margin: auto;
+    min-width: 300px;
+}
+
+.image-container  {
+    margin-top: 20px;
+}
+.projects-section{
+
+    height: 60vh;
+    width: 100vw;
+}
+.projects-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    height: 10vh;
+}
+
+@media screen and (min-width:481px) {
+    .about-me-container {
+        height: 60vh;
+        width: 90vw;
+    }    
+}
